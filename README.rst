@@ -59,21 +59,11 @@ fast_hdbscan requires:
  * numpy
  * scikit-learn
 
-fast_hdbscan can be installed via pip:
+fast_hdbscan can be installed via pip with:
 
 .. code:: bash
 
-    pip install fast_hdbscan
-
-To manually install this package:
-
-.. code:: bash
-
-    wget https://github.com/TutteInstitute/fast_hdbscan/archive/main.zip
-    unzip main.zip
-    rm main.zip
-    cd fast_hdbscan-main
-    python setup.py install
+    py -m pip install dist\fast_hdbscan_cached-0.1.3-py3-none-any.whl
 
 ----------
 References
