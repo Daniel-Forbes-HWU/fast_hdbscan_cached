@@ -6,7 +6,7 @@
   :align: center
 
 ======================
-Fast Multicore HDBSCAN
+Fast Multicore HDBSCAN with cached JIT compilation
 ======================
 
 This fork is a slightly modified version of ``fast_hdbscan`` which naively adds numba jit caching to reduce import time.
@@ -42,24 +42,24 @@ Euclidean data (e.g. the output of UMAP), you can use this library as a straight
 
 .. code:: python
 
-    import fast_hdbscan
+    import fast_hdbscan_cached
     from sklearn.datasets import make_blobs
 
     data, _ = make_blobs(1000)
 
-    clusterer = fast_hdbscan.HDBSCAN(min_cluster_size=10)
+    clusterer = fast_hdbscan_cached.HDBSCAN(min_cluster_size=10)
     cluster_labels = clusterer.fit_predict(data)
 
 ------------
 Installation
 ------------
-fast_hdbscan requires:
+fast_hdbscan_cached requires:
 
  * numba
  * numpy
  * scikit-learn
 
-fast_hdbscan can be installed via pip with:
+fast_hdbscan_cached can be installed via pip with:
 
 .. code:: bash
 
