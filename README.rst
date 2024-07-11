@@ -9,6 +9,9 @@
 Fast Multicore HDBSCAN
 ======================
 
+This fork is a slightly modified version of ``fast_hdbscan`` which naively adds numba jit caching to reduce import time.
+An reduction of 22 to 7s was observed with these changes.
+
 The ``fast_hdbscan`` library provides a simple implementation of the HDBSCAN clustering algorithm designed specifically
 for high performance on multicore machine with low dimensional data (2D to about 20D). The algorithm runs in parallel and can make
 effective use of as many cores as you wish to throw at a problem. It is thus ideal for large SMP systems, and even
