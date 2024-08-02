@@ -11,7 +11,7 @@ Fast Multicore HDBSCAN with cached JIT compilation
 
 This fork is a slightly modified version of ``fast_hdbscan`` which naively adds numba jit caching to reduce import time.
 An import-time clustering job to force jit compilation was also removed. Compilation now occurs when the clustering is first used in any calling code.
-A import time reduction of roughly 22 to 0.7s was observed with these changes.
+An import time reduction of roughly 22 to 0.7s was observed with these changes.
 
 The ``fast_hdbscan`` library provides a simple implementation of the HDBSCAN clustering algorithm designed specifically
 for high performance on multicore machine with low dimensional data (2D to about 20D). The algorithm runs in parallel and can make
